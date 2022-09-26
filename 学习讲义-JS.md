@@ -1,7 +1,7 @@
 ## <center> JavaScript学习 </center>
 1. <b>入门</b>
-   1.  <b>基本语法</b><p>
-       1.  语句
+    1.  <b>基本语法</b><p>
+        1.  语句
             * 赋值语句
                 ```
                 var a = 1 + 3; // 1 + 3为表达式,表达式一定会返回一个值,而整行内容称为语句,语句一般不需要返回值
@@ -10,7 +10,7 @@
                 ```
                 var a = 1 + 3; var b = 'abc'; // html中属性规范是用双引号,js中字符串规定是用单引号.不过也可写成var b = "abc",没有影响
                 ```
-        1. 变量
+        2. 变量
             * 通过var声明一个变量，通过=操作对变量进行赋值
                 ```
                 var a; // 声明变量,此刻输出a的值为undefined
@@ -44,5 +44,31 @@
                 a = 1;
                 ```
                 最后结果显示的是undefined。
-            
+        3. 标识符
+            * 最常见的标识符就是变量名，遵循以下规则（通常情况规范的变量名都需要有一定意义）：
+                * 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。
+                * 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。
+                * 保留字不能用于标识符：arguments、break、case、catch、class、const、continue、debugger、default、delete、do、else、enum、eval、export、extends、false、finally、for、function、if、implements、import、in、instanceof、interface、let、new、null、package、private、protected、public、return、static、super、switch、this、throw、true、try、typeof、var、void、while、with、yield。
+        4. 注释
+            * 单行注释
+                ```
+                // 这是单行注释
+                ``` 
+            * 多行注释 
+                ```
+                /*
+                这是
+                多行
+                注释
+                */
+                ```
+        5. 区块
+            * JavaScript使用大括号将多个相关的区域组合到一起，称作区块。<b>注意！！！</b>区块并不会构成单独作用域，一般情况下区块往往和更复杂的语法结构如``` for``` 、```if```、```while ```一起出现。
+                ```
+                {
+                    var a = 1;
+                }
+
+                console.log(a); // 1
+                ```
 2. pass
